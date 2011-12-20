@@ -1,0 +1,3 @@
+@app = window.app ? {}
+
+jQuery ->
