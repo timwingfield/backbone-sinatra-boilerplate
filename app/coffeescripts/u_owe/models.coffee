@@ -1,4 +1,4 @@
-class Owed extends Backbone.Model
+class Contract extends Backbone.Model
   defaults:
     paid: false
 
@@ -8,4 +8,4 @@ class Owed extends Backbone.Model
       return "Title must not be blank"
 
 @app = window.app ? {}
-@app.Owed = Owed
+@app.Contract = Contract
