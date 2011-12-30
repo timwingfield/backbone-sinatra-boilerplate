@@ -6,6 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <!-- stylesheet link(s) here -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/screen.css" media="screen" />
 
     <script src="/javascripts/vendor/jquery.js"></script>
     <script src="/javascripts/vendor/underscore.js"></script>
@@ -21,17 +23,25 @@
 
     <!-- templates -->
     <script type="text/tempate" id="title-template">
-      <h2>U Owe Me</h2>
+      <h2 class="clearfix input">U Owe Me</h2>
+    </script>
+
+    <script type="text/template" id="new-contract-template">
+      <div id="new-contract-container" class="clearfix input-prepend">
+        <span class="add-on">Contract Name</span>
+        <input class="xlarge" id="new-contract" type="text" />
+        <span id="warning" class="help-block">Your U Owe Me contract is blank! Please type a name for the group that owes you some money.</div>
+      </div>
     </script>
 
   </head>
   <body>
-    <div id="main">
+    <div class="container" id="main">
       <div id="wrap">
       </div>
-    </div>
-    <div class="specs">
-      <a href="/test-js/SpecRunner.html">Run Specs</a>
+      <div class="specs">
+        <a href="/test-js/SpecRunner.html">Run Specs</a>
+      </div>
     </div>
   </body>
 </html>
