@@ -25,14 +25,16 @@ jQuery ->
     events:
       'keypress #new-contract': 'saveOnEnter'
       'focusout #new-contract': 'hideWarning'
-    render: ->
+    render: =>
       $(@el).html @template()
+      @hideWarning()
       @
     saveOnEnter: ->
       if (event.keyCode is 13)
         event.preventDefault()
         @flashWarning()
-    hideWarning: ->
+    hideWarning: =>
+      alert('hello')
       $('#warning').hide()
       $('#new-contract-container').removeClass('warning')
     flashWarning: ->
