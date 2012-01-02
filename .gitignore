@@ -2,3 +2,4 @@
 public/javascripts/*.js
 public/javascripts/u_owe/*.js
 public/javascripts/u_owe_spec/*.js
+.rvmrc
