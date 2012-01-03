@@ -1,5 +1,5 @@
 .DS_Store
 public/javascripts/*.js
-public/javascripts/u_owe/*.js
-public/javascripts/u_owe_spec/*.js
+public/javascripts/app/*.js
+public/javascripts/app_spec/*.js
 .rvmrc
