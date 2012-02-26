@@ -3,3 +3,4 @@ public/javascripts/*.js
 public/javascripts/app/*.js
 public/javascripts/app_spec/*.js
 .rvmrc
+.jhw-cache/*

@@ -1,0 +1,19 @@
+src_files:
+  - "public/javascripts/vendor/jquery.js"
+  - "public/javascripts/vendor/underscore.js"
+  - "public/javascripts/vendor/**/*.{js,coffee}"
+  - "app/coffeescripts/app.coffee"
+  - "app/coffeescripts/app/models.coffee"
+  - "app/coffeescripts/**/*.{js,coffee}"
+
+stylesheets:
+
+helpers:
+  - "helpers/**/*.{js,coffee}"
+
+spec_files:
+  - "**/*[Ss]pec.{js,coffee}"
+
+src_dir:
+
+spec_dir: spec
