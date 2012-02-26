@@ -1,22 +1,4 @@
-ENV['RACK_ENV'] = 'test'
-
-$: << File.dirname(__FILE__) + "/../lib"
-
-require "sinatra/base"
-require "minitest/autorun"
-require "rack/test"
-require "mongo"
-
-require "server"
-
-Barista.logger.level = Logger::WARN
-
-module DBUtils
-  def drop_db
-    conn = Mongo::Connection.new
-    conn.drop_database("db-#{ENV['RACK_ENV']}")
-  end
-end
+require 'spec_helper'
 
 describe AppServer do
   
@@ -28,16 +10,8 @@ describe AppServer do
   end
 
   describe "/" do
-    before do
-      get "/"
-    end
-
-    it "should respond with success" do
-      assert_equal 200, last_response.status
-    end
-
-    it "should emit an HTML header" do
-      assert_equal "text/html;charset=utf-8", last_response.headers["Content-type"]
-    end
+    When { get "/" }
+    Then { last_response.status.should be 200 }
+    Then { last_response.headers["Content-type"].should == "text/html;charset=utf-8" }
   end
 end
