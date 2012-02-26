@@ -9,7 +9,7 @@ src_files:
 stylesheets:
 
 helpers:
-  - "helpers/**/*.{js,coffee}"
+  - "javascripts/helpers/**/*.{js,coffee}"
 
 spec_files:
   - "**/*[Ss]pec.{js,coffee}"
