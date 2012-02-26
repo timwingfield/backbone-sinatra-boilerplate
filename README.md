@@ -5,6 +5,6 @@ Twitter Bootstrap, and MongoDB.
 
 `bundle install` to install everything
 
-`be guard` to kick off all the tests
+`bundle exec guard` to kick off all the tests
 
-`be shotgun` to fire up the website
+`bundle exec shotgun` to fire up the website
