@@ -14,6 +14,7 @@ gem 'multi_json'
 gem 'tilt'
 
 group :development do
+  gem 'rack-test'
   gem 'rspec'
   gem 'rspec-given'
 
