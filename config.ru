@@ -1,3 +1,3 @@
-require './lib/server'
+require './server'
 
 run AppServer

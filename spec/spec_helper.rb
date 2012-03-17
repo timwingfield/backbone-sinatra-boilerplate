@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-$: << File.dirname(__FILE__) + "/../lib"
+$: << File.dirname(__FILE__) + "/../"
 
 require "sinatra/base"
 require "rspec"
@@ -9,8 +9,6 @@ require "rack/test"
 require "mongo"
 
 require "server"
-
-Barista.logger.level = Logger::WARN
 
 module DBUtils
   def drop_db
