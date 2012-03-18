@@ -10,8 +10,7 @@ group :js do
   spec_location = "spec/javascripts/%s_spec"
 
   guard 'jasmine-headless-webkit' do
-    watch(%r{^app/coffeescripts/(.*)\.(coffee|js)$}) { |m| newest_js_file(spec_location % m[1]) }
-    watch(%r{^public/javascripts/vendor*})
+    watch(%r{^app/js/(.*)\.(coffee|js)$}) { |m| newest_js_file(spec_location % m[1]) }
     watch(%r{^spec/javascripts/helpers*})
     watch(%r{^spec/javascripts/(.*)_spec\..*}) { |m| newest_js_file(spec_location % m[1]) }
   end
