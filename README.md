@@ -9,7 +9,7 @@ Twitter Bootstrap, and MongoDB.
 
 `git remote add origin ssh://git@github.com/user/new_project_name.git`
 
-optional: `git remove rm boilerplate`
+optional: `git remote rm boilerplate`
 
 ### How to get everything started
 
