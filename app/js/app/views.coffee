@@ -1,8 +1,7 @@
 $ ->
   class AppName.TitleView extends Backbone.View
-    template: ->
-      _.template($("#title-template").html())
+    template: JST['templates/title']
     
     render: ->
-      $(@el).html(@template())
+      $(@el).html(@template)
       @

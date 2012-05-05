@@ -18,3 +18,11 @@ optional: `git remote rm boilerplate`
 `bundle exec guard` to kick off all the tests
 
 `bundle exec shotgun` to fire up the website
+
+### Renaming Your App Namespace
+
+Rename `AppName` to your application name in the files listed below:
+
+* In `app/app.coffee` on lines 1 and 4
+* In `app/js/app/routers.coffee` on lines 2 and 7
+* In `app/js/app/views.coffee` on line 2
